@@ -121,3 +121,11 @@ h4 {
 	text-align: center;
 	margin: 0 auto;
 }
+
+.btn-icon {
+	line-height: 0;
+}
+
+.about-body .btn-icon {
+	font-size: 25px;
+}
