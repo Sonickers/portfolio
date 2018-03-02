@@ -116,7 +116,7 @@ h4 {
 	white-space: nowrap;
 	overflow: hidden;
 	border-right: .05em solid;
-	animation: typing 9s steps(31),
+	animation: typing 9s steps(29),
 	           caret 1s steps(1) infinite;
 	text-align: center;
 	margin: 0 auto;
