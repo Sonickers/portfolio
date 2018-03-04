@@ -7,25 +7,25 @@ body {
 }
 
 .btn-primary {
-	/*color: #495057;*/
-	background-color: #FAA2C1;
-	border-color: #FAA2C1;
+	color: #ff4779;
+	background-color: #D9D9D9;
+	border-color: white;
 }
 
 .btn-primary:hover {
-	/*color: #495057;*/
-	background-color: #D6336C;
-	border-color: #DC8FAA;
+	color: #495057;
+	background-color: white;
+	border-color: #EDCBCB;
 }
 
 .card {
-	min-height: 420px;
-	border-color: 3px solid white;
+	/*min-height: 420px;*/
+	border: 1px solid white;
 }
 
 
 .container {
-	border: 3px double white;
+	border: 3px double #ddd;
 	background-color: #F8F9FA;
 	-webkit-box-shadow: 1px 1px 30px 1px #747474;
     -moz-box-shadow: 1px 1px 30px 1px #747474;
@@ -38,29 +38,25 @@ body {
 }
 
 .sr-only {
-	color: #E64980;
+	color: black;
 }
 
 .card-title {
-	color: #E64980;
+	color: black;
 	font-size: 24px;
 	font-weight: bold;
 }
 
-.navbar {
-	/*border-color: 10px solid white;
-	*/
-}
 
 .btn-outline-success {
-	color: white;
+	color: #FF4779;
 	border-color: white;
 }
 
 .btn-outline-success:hover {
-	color: #343A40;
-	background-color: #D6336C;
-	border-color: #343A40;
+	color: #FF4779;
+	background-color: white;
+	border-color: #EDCBCB;
 
 }
 
@@ -68,7 +64,7 @@ body {
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;  
-    border: 1px solid #ccc;
+    border: 1px solid white;
     border-radius: 4px; 
     box-sizing: border-box; 
     margin-top: 6px; 
@@ -78,22 +74,22 @@ input[type=text], select, textarea {
 
 
 input[type=submit] {
-    background-color: #FAA2C1;
-    color: white;
+    background-color: #D9D9D9;
+    color: #FF4779;
     padding: 12px 20px;
-    border: none;
+    border: 1px solid #EDCBCB;
     border-radius: 4px;
     cursor: pointer;
 }
 
 
 input[type=submit]:hover {
-    background-color: #D6336C;
+    background-color: white;
 }
 
 .carousel-caption {
-	margin-bottom: 26.5rem;
-	color: #E64980;
+	margin-bottom: 20.5rem;
+	color: black;
 
 }
 
@@ -111,15 +107,15 @@ p {
 
 h4 {
 	font: bold 200% monospace;
-	/*width: 8.25em;*/
-	width: 31ch;
+	width: 29ch;
 	white-space: nowrap;
 	overflow: hidden;
 	border-right: .05em solid;
-	animation: typing 9s steps(29),
+	animation: typing 8s steps(29),
 	           caret 1s steps(1) infinite;
 	text-align: center;
 	margin: 0 auto;
+	color: #ff4779;
 }
 
 .btn-icon {
@@ -128,4 +124,25 @@ h4 {
 
 .about-body .btn-icon {
 	font-size: 25px;
+}
+
+footer {
+	text-align: center;
+}
+
+/*.navbar {
+	border: 1px solid #EDCBCB;
+}*/
+
+.navbar-collapse {
+	font-size: 20px;
+	text-align: center;
+}
+
+.navbar-light .navbar-brand {
+	color: black;
+}
+
+svg:not(:root).svg-inline--fa {
+	color: #ff4779;
 }
