@@ -7,19 +7,19 @@ body {
 }
 
 .btn-primary {
-	color: #ff4779;
-	background-color: #D9D9D9;
+	color: white;
+	background-color: #FF4779;
 	border-color: white;
 }
 
 .btn-primary:hover {
-	color: #495057;
+	color: #FF4779;
 	background-color: white;
 	border-color: #EDCBCB;
 }
 
 .card {
-	/*min-height: 420px;*/
+	min-height: 420px;
 	border: 1px solid white;
 }
 
@@ -49,8 +49,9 @@ body {
 
 
 .btn-outline-success {
-	color: #FF4779;
-	border-color: white;
+    color: white;
+    border-color: white;
+    background-color: #FF4779;
 }
 
 .btn-outline-success:hover {
@@ -74,8 +75,8 @@ input[type=text], select, textarea {
 
 
 input[type=submit] {
-    background-color: #D9D9D9;
-    color: #FF4779;
+    background-color: #FF4779;
+    color: white;
     padding: 12px 20px;
     border: 1px solid #EDCBCB;
     border-radius: 4px;
@@ -85,6 +86,8 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: white;
+    color: #FF4779;
+    border: 1px solid #EDCBCB;
 }
 
 .carousel-caption {
@@ -143,6 +146,26 @@ footer {
 	color: black;
 }
 
-svg:not(:root).svg-inline--fa {
-	color: #ff4779;
+.fa-heart {
+	color: #FF4779;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: #FF4779;
+}
+
+
+.form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    color: #FF4779;
 }
