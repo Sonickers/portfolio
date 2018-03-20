@@ -133,10 +133,6 @@ footer {
 	text-align: center;
 }
 
-/*.navbar {
-	border: 1px solid #EDCBCB;
-}*/
-
 .navbar-collapse {
 	font-size: 20px;
 	text-align: center;
@@ -168,4 +164,14 @@ input[type=text], select, textarea {
     width: auto;
     vertical-align: middle;
     color: #FF4779;
+}
+
+.navbar-expand-lg {
+	background: linear-gradient(135deg, #EDCBCB, #F9ECEC, #FCEFEF);
+}
+
+
+.fa-code, .fa-paint-brush, .fa-archive {
+	color: pink;
+	font-size: 80px;
 }
