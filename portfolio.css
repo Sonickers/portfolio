@@ -25,7 +25,6 @@ body {
 
 
 .container {
-
 	background-color: #F8F9FA;
 	-webkit-box-shadow: 1px 1px 30px 1px #747474;
     -moz-box-shadow: 1px 1px 30px 1px #747474;
@@ -51,7 +50,7 @@ body {
 .btn-outline-success {
     color: white;
     border-color: white;
-    background-color: #FF4779;
+    background-color: black;
 }
 
 .btn-outline-success:hover {
@@ -143,7 +142,7 @@ footer {
 }
 
 .navbar .fa-heart {
-	color: #FF4779;
+	color: black;
 }
 
 input[type=text], select, textarea {
@@ -168,10 +167,5 @@ input[type=text], select, textarea {
 
 .navbar-expand-lg {
 	background: linear-gradient(135deg, #EDCBCB, #F9ECEC, #FCEFEF);
-}
+	border: 2px solid #F9ECEC;
 
-
-.fa-code, .fa-paint-brush, .fa-archive {
-	color: pink;
-	font-size: 80px;
-}
