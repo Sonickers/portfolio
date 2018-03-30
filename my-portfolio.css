@@ -1,0 +1,371 @@
+body {
+	background-color: white;	
+}
+
+.whole-link {
+	position: absolute;
+	top: 0; left: 0;
+	height: 100%; width: 100%;
+}
+
+.con-fluid-about {
+	background-color: #212529;
+}
+
+#about {	
+	color: white;
+	font-family: 'Poiret One', cursive;
+}
+
+.footer-text {
+	font-family: 'Poiret One', cursive;
+}
+
+.navbar {
+	background-color: white;
+	/*background-color: #DD2671;	*/
+	/*border-bottom: 5px dotted black;*/
+}
+
+.nav-item a {
+	color: black;
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	font-size: 35px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.nav-item a:hover {
+	color: #DD2671;
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	font-size: 35px;
+	font-weight: bold;	
+	text-shadow: -3px 3px 6px -3px black;
+	text-decoration: overline;
+	text-decoration-color: black;
+}
+
+
+.about-title {
+	font-size: 20px;
+}
+
+nav img {
+	width: 10%;
+	height: 10%;
+}
+
+ul a {
+	justify-content: space-around;
+}
+
+li .disabled {
+	cursor: no-drop;
+}
+
+.text-about h3 {
+	color: white;
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+}
+
+.text-projects h3 {
+	color: black;
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+}
+
+.text-drawings h3 {
+	color: white;
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+}
+
+.text-contact h3 {
+	color: black;
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+}
+
+.form-control:focus {
+	color: #FF4779;
+	background-color: #fff; 
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem pink;
+	border: none;
+}
+
+@keyframes bounce {
+	60%, 80%, to {
+		transform: translateY(400px);
+		animation-timing-function: ease;
+	}
+	70% { transform: translateY(300px); }
+	90% { transform: translateY(360px); }
+}
+
+.cat {
+	position: absolute;
+	right: 0%;
+	border-radius: 50%;
+	animation: bounce 2s /*cubic-bezier(.1,.25,1,.25)*/ forwards;
+}
+
+.cat img {
+	width: 300px;
+}
+
+.navbar-toggler-icon {
+	background: no-repeat center center;
+	background-size: 100% 100%;
+	color: black;
+}
+
+h3 {
+	font-size: 40px;
+}
+
+
+.navbar-collapse {
+	/*padding-left: 20%;*/
+}
+
+
+.btn-icon:hover {
+	color: #FF4779;
+	background-color: white;
+	border-color: black;
+	box-shadow: -3px 3px 6px -3px black;
+}
+
+.btn-icon {
+	color: black;
+	background-color: white;
+	border-color: black;
+}
+
+.btn-link {
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	background-color: transparent;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.card {
+	background-color: transparent;
+	border: none;
+}
+
+.card-header {
+	padding: .75rem 1.25rem;
+	margin-bottom: 0;
+	background-color: transparent; 
+	border-bottom: none;
+}
+
+.fa-angle-down {
+	color: #DD2671;
+}
+
+.projects {
+	background-color: white;
+	font-family: 'Poiret One', cursive;
+	color: #212529;
+	font-size: 1rem;
+}
+
+.btn-link:hover {
+	color: #FF4779;
+	text-decoration: none;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.btn-link, .btn-link:focus {
+	text-decoration: overline;
+	border-color: transparent;
+	box-shadow: none;
+	-webkit-text-decoration-color: #FF4779; /* Safari */    
+	text-decoration-color: #FF4779;
+}
+
+.btn-link.collapsed {
+	text-decoration: none;
+}
+
+.btn-link .fa-angle-down {
+	opacity: 0;
+}
+
+.btn-link.collapsed .fa-angle-down {
+	opacity: 1;
+}
+
+@keyframes changeColors
+{
+	0% { color: white; }
+	25% { color: #f9a7bd; }
+	50% { color: #fc6f94; }
+	100% { color: #FF4779; }
+}
+
+#S {
+	color: white;
+	animation-name: changeColors;
+	animation-duration: 5s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite
+}
+
+.con-fluid-fotter {
+	background-color: #212529;
+	color: white;
+	font-family: 'Poiret One', cursive;
+}
+
+.con-fotter {
+	text-align: center;
+}
+
+.con-drawings {
+	background-color: #212529;
+	color: white;
+	font-family: 'Poiret One', cursive;
+}
+
+.card-body {
+	font-size: 18px;
+}
+
+.card-body img {
+	/*border: 3px double black;*/
+	width: 100%;
+	height: 100%;
+}
+
+.projects-icon {
+	font-size: 45px;
+	color: black;
+}
+
+.html5 svg:hover {	
+	color: #F06529;
+}
+
+.css3 svg:hover {	
+	color: #28A9E0;
+}
+
+.javascript svg:hover {	
+	color: #F8DC3D;
+}
+
+.projects-icons {
+	color: #E91E63;
+	font-size: 30px
+}
+
+
+
+/*This is eggs part*/
+
+.eggs img {
+	width: 100%;
+	height: 100%;
+}
+
+.eggs {
+	padding-right: 20px;
+	text-align: center;
+}
+.egg {
+	width: 70px;
+	height: 100px;
+	margin: 1em auto;
+	/*background: #FBE9E7;*/
+	border-radius: 50%/60% 60% 40% 40%;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.stripe {
+	height: 20%;
+}
+
+.stripe:not(:first-child) {
+	border-top: 2px solid #D81B60;
+}
+
+.stripe:nth-child(1) {
+	background-color: #FCE4EC;
+}
+
+.stripe:nth-child(2) {
+	background-color: #F8BBD0;
+}
+
+.stripe:nth-child(3) {
+	background-color: #F48FB1;
+}
+
+.stripe:nth-child(4) {
+	background-color: #EC407A;
+}
+
+.stripe:nth-child(5) {
+	background-color: #E91E63;
+}
+
+@-webkit-keyframes egg-left-animation {
+	0% {
+		transform: rotate(-20deg);
+	}
+	100% {
+		transform: rotate(-10deg);
+	}
+}
+
+@keyframes egg-left-animation {
+	0% {
+		transform: rotate(-20deg);
+	}
+	100% {
+		transform: rotate(-10deg);
+	}
+}
+@-webkit-keyframes egg-right-animation {
+	0% {
+		transform: rotate(30deg);
+	}
+	100% {
+		transform: rotate(25deg);
+	}
+}
+
+@keyframes egg-right-animation {
+	0% {
+		transform: rotate(30deg);
+	}
+	100% {
+		transform: rotate(25deg);
+	}
+}
+
+.egg-left {
+	transform: rotate(-10deg);
+	animation: egg-left-animation 0.8s linear 0s infinite alternate;
+}
+.egg-right {
+	transform: rotate(25deg);
+	animation: egg-right-animation 0.7s linear 0s infinite alternate;
+	background-color: #E91E63;
+}
+.egg-text {
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+	font-size: 2.5rem;
+}
