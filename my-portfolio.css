@@ -17,17 +17,15 @@ body {
 	font-family: 'Poiret One', cursive;
 }
 
-.footer-text {
-	font-family: 'Poiret One', cursive;
+.text-projects h3, .text-about h3, .text-drawings h3, .text-contact h3{
+	font-family: 'Amatic SC', cursive;
+	text-align: center;
+	font-size: 2.75rem;
+	color: #E91E63;
+	font-weight: bold;
 }
 
-.navbar {
-	background-color: white;
-	/*background-color: #DD2671;	*/
-	/*border-bottom: 5px dotted black;*/
-}
-
-.nav-item a {
+.navbar-light .navbar-nav .nav-link {
 	color: black;
 	text-align: center;
 	font-family: 'Amatic SC', cursive;
@@ -36,8 +34,8 @@ body {
 	margin-left: 10px;
 }
 
-.nav-item a:hover {
-	color: #DD2671;
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #E91E63;
 	text-align: center;
 	font-family: 'Amatic SC', cursive;
 	font-size: 35px;
@@ -65,29 +63,6 @@ li .disabled {
 	cursor: no-drop;
 }
 
-.text-about h3 {
-	color: white;
-	text-align: center;
-	font-family: 'Amatic SC', cursive;
-}
-
-.text-projects h3 {
-	color: black;
-	text-align: center;
-	font-family: 'Amatic SC', cursive;
-}
-
-.text-drawings h3 {
-	color: white;
-	text-align: center;
-	font-family: 'Amatic SC', cursive;
-}
-
-.text-contact h3 {
-	color: black;
-	text-align: center;
-	font-family: 'Amatic SC', cursive;
-}
 
 .form-control:focus {
 	color: #FF4779;
@@ -97,41 +72,12 @@ li .disabled {
 	border: none;
 }
 
-@keyframes bounce {
-	60%, 80%, to {
-		transform: translateY(400px);
-		animation-timing-function: ease;
-	}
-	70% { transform: translateY(300px); }
-	90% { transform: translateY(360px); }
-}
-
-.cat {
-	position: absolute;
-	right: 0%;
-	border-radius: 50%;
-	animation: bounce 2s /*cubic-bezier(.1,.25,1,.25)*/ forwards;
-}
-
-.cat img {
-	width: 300px;
-}
 
 .navbar-toggler-icon {
 	background: no-repeat center center;
 	background-size: 100% 100%;
 	color: black;
 }
-
-h3 {
-	font-size: 40px;
-}
-
-
-.navbar-collapse {
-	/*padding-left: 20%;*/
-}
-
 
 .btn-icon:hover {
 	color: #FF4779;
@@ -240,7 +186,6 @@ h3 {
 .con-fluid-fotter {
 	background-color: #212529;
 	color: white;
-	font-family: 'Poiret One', cursive;
 }
 
 .con-fotter {
@@ -250,7 +195,7 @@ h3 {
 .con-drawings {
 	background-color: #212529;
 	color: white;
-	font-family: 'Poiret One', cursive;
+	font-family: 'Amatic SC', cursive;
 }
 
 .card-body {
@@ -258,9 +203,13 @@ h3 {
 }
 
 .card-body img {
-	/*border: 3px double black;*/
 	width: 100%;
 	height: 100%;
+}
+
+.card-header {
+	font-family: 'Poiret One', cursive;
+	    padding: 1.75rem 1.25rem;
 }
 
 .projects-icon {
@@ -286,102 +235,3 @@ h3 {
 }
 
 
-
-/*This is eggs part*/
-
-.eggs img {
-	width: 100%;
-	height: 100%;
-}
-
-.eggs {
-	padding-right: 20px;
-	text-align: center;
-}
-.egg {
-	width: 70px;
-	height: 100px;
-	margin: 1em auto;
-	/*background: #FBE9E7;*/
-	border-radius: 50%/60% 60% 40% 40%;
-	overflow: hidden;
-	display: inline-block;
-}
-
-.stripe {
-	height: 20%;
-}
-
-.stripe:not(:first-child) {
-	border-top: 2px solid #D81B60;
-}
-
-.stripe:nth-child(1) {
-	background-color: #FCE4EC;
-}
-
-.stripe:nth-child(2) {
-	background-color: #F8BBD0;
-}
-
-.stripe:nth-child(3) {
-	background-color: #F48FB1;
-}
-
-.stripe:nth-child(4) {
-	background-color: #EC407A;
-}
-
-.stripe:nth-child(5) {
-	background-color: #E91E63;
-}
-
-@-webkit-keyframes egg-left-animation {
-	0% {
-		transform: rotate(-20deg);
-	}
-	100% {
-		transform: rotate(-10deg);
-	}
-}
-
-@keyframes egg-left-animation {
-	0% {
-		transform: rotate(-20deg);
-	}
-	100% {
-		transform: rotate(-10deg);
-	}
-}
-@-webkit-keyframes egg-right-animation {
-	0% {
-		transform: rotate(30deg);
-	}
-	100% {
-		transform: rotate(25deg);
-	}
-}
-
-@keyframes egg-right-animation {
-	0% {
-		transform: rotate(30deg);
-	}
-	100% {
-		transform: rotate(25deg);
-	}
-}
-
-.egg-left {
-	transform: rotate(-10deg);
-	animation: egg-left-animation 0.8s linear 0s infinite alternate;
-}
-.egg-right {
-	transform: rotate(25deg);
-	animation: egg-right-animation 0.7s linear 0s infinite alternate;
-	background-color: #E91E63;
-}
-.egg-text {
-	font-family: 'Dancing Script', cursive;
-	text-align: center;
-	font-size: 2.5rem;
-}
