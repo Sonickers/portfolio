@@ -160,6 +160,21 @@ h3 {
 	border: none;
 }
 
+.techonologies-list {
+	padding: 0;
+	list-style: none;
+}
+
+.techonologies-list li {
+	width: 25%;
+	padding: 0 1rem;
+	line-height: 1;
+}
+
+.techonologies-list li img {
+	height: auto;
+}
+
 .card-header {
 	padding: .75rem 1.25rem;
 	margin-bottom: 0;
