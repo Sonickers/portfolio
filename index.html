@@ -17,8 +17,13 @@
 
 
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse just" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
+
+
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
         </li>
@@ -26,13 +31,31 @@
           <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#drawings">Drawings</a>
+          <a class="nav-link disabled" href="#drawings">Drawings/Design</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
         </li>
         
       </ul>   
+
+      <a class="nav-item">
+        <div class="egg-text">
+          <p>Happy Easter!</p>
+        </div>
+        <div class="eggs">
+          <div class="egg egg-left">
+            <div class="stripe"></div>
+            <div class="stripe"></div>
+            <div class="stripe"></div>
+            <div class="stripe"></div>
+            <div class="stripe"></div>
+          </div>
+          <div class="egg egg-right">
+            <img src="easter.png">
+          </div>
+        </div>     
+      </a>
 
 
       <div class="icons">
@@ -44,24 +67,21 @@
     </div>  
   </nav>
 
-
-  <section id="about" class="container-fluid con-fluid-about">
-    <div class="container pt-4 pb-4">
+  <section class="container-fluid con-fluid-about">
+    <div class="container pt-5 pb-5">
       <div class="text-about">
         <h3>ABOUT</h3>         
       </div>
-      <div  class="about">
+      <div id="about" class="about">
         <div class="card-body about-body ">
-          <h5 class="about-title">Hello! My name is <span id="S">Sonia</span>.</h5>
-          <p class="about-text">I am third year Architecture student from Poland. My biggest passion is drawing, doing art, pc games and medicine but this year I got a new hobby - web development.  </p>
-          <p>Let me show you few of my projects so you can gett taste of what I do. </p>
-          <p>I am always ready to pick up new projects and learn technologies.</p>
+          <h5 class="about-title">My name is <span id="S">Sonia</span>.</h5>
+          <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis felis quis lectus suscipit euismod. Vestibulum justo risus, eleifend et sollicitudin eget, tristique sed mauris. Sed tortor lacus, condimentum in elit quis, malesuada ullamcorper justo. Ut sed faucibus nisi, id volutpat nunc. Curabitur fermentum urna a mi condimentum, quis viverra orci semper. Aenean a diam elit. Duis nec efficitur purus, vel placerat sapien. Praesent tristique a nulla id luctus. Nulla id risus arcu. Vivamus augue magna, pulvinar interdum euismod at, varius sed libero. Suspendisse at felis sodales risus dapibus varius at sit amet dui. Proin nunc nibh, pharetra quis congue id, consectetur id nibh. Phasellus ac leo ornare, viverra lacus quis, dictum arcu.</p>
         </div>        
       </div>
     </div>
   </section>
 
-  <section id="projects" class="container pt-4 pb-4">
+  <section class="container pt-5 pb-5">
     <div class="projects">
       <div class="text-projects">
         <h3>PROJECTS</h3>
@@ -70,7 +90,7 @@
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <i class="fas fa-angle-down"></i> Smoothie Maker
               </button>
             </h5>
@@ -82,29 +102,26 @@
                 <div class="col-sm-12 col-md-4">
                   <img src="smoothiemaker.png">
                 </div>
-                <div class="col-sm-12 col-md-4 pb-3">
+                <div class="col-sm-12 col-md-4">
+                  <p>Drag and drop projects. Idea, design and job - all by me. Funny thing when you can choose your favorite ingredients and get know how many vitamins you would get after drink your smoothie.</p>
                   <p>
                     Live:
-                    <a href="https://sonickers.github.io/smoothie-maker/">
+                    <a href="https://sonickers.github.io/colour-mixer/">
                       <i class="projects-icons fas fa-external-link-alt"></i>
                     </a>
                   </p>
                   <p>
                     Code on github:
-                    <a href="https://github.com/Sonickers/smoothie-maker">
+                    <a href="https://github.com/Sonickers/colour-mixer">
                       <i class="projects-icons fab fa-git-square"></i>
                     </a>
                   </p>
                 </div>
-                <div class="col-sm-12 col-md-4 text-center pb-3">
+                <div class="col-sm-12 col-md-4 text-center">
                   <p>Technologies:</p>
-                  <ul class="techonologies-list d-flex justify-content-around">
-                    <li><img src="css.png"></li>
-                    <li><img src="html.png"></li>
-                    <li><img src="bootstrap.png"></li>
-                    <li><img src="jq.png"></li>
-                    <li><img src="js.png"></li>
-                  </ul>                  
+                  <p class="projects-icon html5"><i class="fab fa-html5"></i></p>
+                  <p class="projects-icon css3"><i class="fab fa-css3-alt"></i></p>
+                  <p class="projects-icon javascript"><i class="fab fa-js-square"></i></p>
                 </div>
               </div>
             </div>
@@ -125,7 +142,8 @@
                 <div class="col-sm-12 col-md-4">
                   <img src="portfoliopage.png">
                 </div>
-                <div class="col-sm-12 col-md-4 pb-3">
+                <div class="col-sm-12 col-md-4">
+                  <p>Drag and drop projects. Idea, design and job - all by me. Funny thing when you can choose your favorite ingredients and get know how many vitamins you would get after drink your smoothie.</p>
                   <p>
                     Live:
                     <a href="">
@@ -139,161 +157,160 @@
                     </a>
                   </p>
                 </div>
-                <div class="col-sm-12 col-md-4 text-center pb-3">
+                <div class="col-sm-12 col-md-4 text-center">
                   <p>Technologies:</p>
-                  <ul class="techonologies-list d-flex justify-content-around">
-                   <li><img src="css.png"></li>
-                   <li><img src="html.png"></li>
-                   <li><img src="bootstrap.png"></li>
-                   <li><img src="js.png"></li>
-                 </ul> 
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-       <div class="card">
-        <div class="card-header" id="headingThree">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <i class="fas fa-angle-down"></i> Challange - John Smith's page (psd to code)
-            </button>
-          </h5>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-sm-12 col-md-4">
-                <img src="challange18.png">
-              </div>
-              <div class="col-sm-12 col-md-4">
-                <p>Live:s
-                  <a href="https://sonickers.github.io/challenge-18/">
-                    <i class="projects-icons fas fa-external-link-alt"></i>
-                  </a>
-                </p>
-                <p>Code on github:
-                  <a href="https://github.com/Sonickers/challenge-18">
-                    <i class="projects-icons fab fa-git-square"></i>
-                  </a>
-                </p>
-              </div>
-              <div class="col-sm-12 col-md-4 text-center">
-                <p>Technologies:</p>
-                <ul class="techonologies-list d-flex justify-content-around">
-                  <li><img src="css.png"></li>
-                  <li><img src="html.png"></li>
-                  <li><img src="bootstrap.png"></li>
-                  <li><img src="ps.png"></li>
-                </ul> 
+                  <span class="projects-icon html5"><i class="fab fa-html5"></i></span>
+                  <h4 class="projects-icon css3"><i class="fab fa-css3-alt"></i></h4>
+                  <p class="projects-icon javascript"><i class="fab fa-js-square"></i></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="fas fa-angle-down"></i> Challange-18 from Web
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-12 col-md-4">
+                  <img src="challange18.png">
+                </div>
+                <div class="col-sm-12 col-md-4">
+                  <p> One of challanges from Weekly WebDev Challenge. </p>
+                  <p>Live:
+                    <a href="https://sonickers.github.io/challenge-18/">
+                      <i class="projects-icons fas fa-external-link-alt"></i>
+                    </a>
+                  </p>
+                  <p>Code on github:
+                    <a href="https://github.com/Sonickers/challenge-18">
+                      <i class="projects-icons fab fa-git-square"></i>
+                    </a>
+                  </p>
+                </div>
+                <div class="col-sm-12 col-md-4 text-center">
+                  <p>Technologies:</p>
+                  <p class="projects-icon html5"><i class="fab fa-html5"></i></p>
+                  <p class="projects-icon css3"><i class="fab fa-css3-alt"></i></p>
+                  <p class="projects-icon javascript"><i class="fab fa-js-square"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <i class="fas fa-angle-down"></i> Stethoscope Config
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-12 col-md-4">
+                  <img src="stetho.png">
+                </div>
+                <div class="col-sm-12 col-md-4">
+                  <p> App made for Stethoscope Shop </p>
+                  <p>Live:
+                    <a href="https://sonickers.github.io/stethoscope-config/">
+                      <i class="projects-icons fas fa-external-link-alt"></i>
+                    </a>
+                  </p>
+                  <p>Code on github:
+                    <a href="https://github.com/Sonickers/stethoscope-config">
+                      <i class="projects-icons fab fa-git-square"></i>
+                    </a>
+                  </p>
+                </div>
+                <div class="col-sm-12 col-md-4 text-center">
+                  <p>Technologies:</p>
+                  <p class="projects-icon html5"><i class="fab fa-html5"></i></p>
+                  <p class="projects-icon css3"><i class="fab fa-css3-alt"></i></p>
+                  <p class="projects-icon javascript"><i class="fab fa-js-square"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+    </div>
+  </section>
+
+  <section class="container-fluid con-drawings">
+    <div class="container pt-3 pb-3">
+      <div class="text-drawings">
+        <h3>DRAWINGS</h3>
+      </div>
+      <div class="row pt-5 pb-5 js-drawings-container">
+        <!-- images from insta go here -->
+      </div>
+    </div>
+  </section>
+
+  <div class="d-none">
+    <div class="col-sm-12 col-md-4 js-drawing-template">
       <div class="card">
-        <div class="card-header" id="headingThree">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-              <i class="fas fa-angle-down"></i> Page for private doctor surgery
-            </button>
-          </h5>
+        <a href="#" class="whole-link" target="_blank"></a>
+        <img class="card-img-top" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text"></p>
         </div>
-        <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-sm-12 col-md-4">
-                <img src="chirurg-tychy.png">
-              </div>
-              <div class="col-sm-12 col-md-4 pb-3">
-                <p>Live:
-                  <a href="https://sonickers.github.io/chirurg">
-                    <i class="projects-icons fas fa-external-link-alt"></i>
-                  </a>
-                </p>
-                <p>Code on github:
-                  <a href="https://github.com/Sonickers/chirurg">
-                    <i class="projects-icons fab fa-git-square"></i>
-                  </a>
-                </p>
-              </div>
-              <div class="col-sm-12 col-md-4 text-center pb-3">
-                <p>Technologies:</p>
-                <ul class="techonologies-list d-flex justify-content-around">
-                  <li><img src="css.png"></li>
-                  <li><img src="html.png"></li>
-                  <li><img src="bootstrap.png"></li>
-                </ul> 
-              </div>
-            </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="container-fluid">
+    <div class="container">
+      <div class="text-contact pt-3 pb-3">
+        <h3>CONTACT</h3>
+      </div>
+      <div class="con-contact">
+        <div class="row justify-content-md-center">
+          <div class="contact mt-3 form-horizontal col-6">
+            <form action="action_page.php">
+
+              <label class="mb-2 mt-2" for="fname">Name</label>
+              <input type="text" id="name" name="firstname" placeholder="Your name" class="form-control">
+              <label class="mb-2 mt-2" for="mail">E-mail</label>
+              <input type="text" id="mail" name="mail" placeholder="Your e-mail" class="form-control">
+
+              <label class="mb-2 mt-2" for="subject">Message</label>
+              <textarea id="subject" name="message" placeholder="What's on your mind?" style="height:200px" class="form-control"></textarea>
+
+              <input class="btn btn-primary btn-icon mt-2 mb-3" type="submit" value="Submit">
+
+            </form>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="drawings" class="container-fluid con-drawings">
-  <div class="container pt-4 pb-4">
-    <div class="text-drawings">
-      <h3>DRAWINGS</h3>
+  <section class="container-fluid con-fluid-fotter pt-3 pb-3">
+    <div class="container con-fotter">
+      <p class="footer-text">Made with <span style="color: #e25555;">&#9829;</span> by Sonia Janota</p>
+      <small class="footer-text"> I used png from https://lovesvg.com</small> 
     </div>
-    <div class="row pt-5 pb-2 js-drawings-container">
-      <!-- images from insta go here -->
-    </div>
-    <div class="row pb-5 d-flex justify-content-center">
-      <a href="#" class="btn btn-primary btn-icon btn-lg js-show-more-btn" style="display: none;">Show more</a>
-    </div>
-  </div>
-</section>
-<div class="d-none">
-  <div class="col-sm-12 col-md-4 js-drawing-template">
-    <div class="card">
-      <a href="#" class="whole-link" target="_blank"></a>
-      <img class="card-img-top" alt="Card image cap">
-      <div class="card-body">
-        <p class="card-text"></p>
-      </div>
-    </div>
-  </div>
-</div>
+  </section>
 
-<section id="contact" class="container-fluid">
-  <div class="container">
-    <div class="text-contact pt-4 pb-4">
-      <h3>CONTACT</h3>
-    </div>
-    <div class="con-contact">
-      <div class="row justify-content-md-center">
-        <div class="contact mt-3 form-horizontal col-6">
-          <form action="sendmessage.php" method="POST">
-            <label class="mb-2 mt-2" for="fname">Name</label>
-            <input type="text" id="name" name="firstname" placeholder="Your name" class="form-control" required>
-            <label class="mb-2 mt-2" for="mail">E-mail</label>
-            <input type="email" id="mail" name="mail" placeholder="Your e-mail" class="form-control" required>
-            <label class="mb-2 mt-2" for="subject">Message</label>
-            <textarea id="subject" name="message" placeholder="What's on your mind?" style="height:200px" class="form-control" required></textarea>
-            <input class="btn btn-icon mt-2 mb-3" type="submit" value="Submit">
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="container-fluid con-fluid-fotter pt-3 pb-3">
-  <div class="container con-fotter">
-    <p class="footer-text">Made with <span style="color: #e25555;">&#9829;</span> by Sonia Janota</p>
-    <small class="footer-text"> I used png from https://lovesvg.com</small> 
-  </div>
-</section>
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-<script type="text/javascript" src="my-portfolio.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script type="text/javascript" src="my-portfolio.min.js"></script>
 </body>
 </html>
