@@ -1,7 +1,7 @@
 (($) => {
     $(function() {
         $.ajax({
-            url: 'https://www.instagram.com/sonia_ehm/?__a=1',
+            url: '/insta.php',
             context: $('.js-drawings-container'),
             beforeSend: function() {
                 if (localStorage) {
@@ -22,7 +22,7 @@
                 return true;
             },
         }).done(function(res) {
-            const images = res.graphql.user.edge_owner_to_timeline_media.edges.map((x) => x.node);
+            const images = res.media;
             window.allImages = images;
             displayImages(images.slice(0,6));
 
@@ -50,9 +50,9 @@
         $('.js-drawings-container').html('');
 
         images.forEach((image) => {
-            const thumbnail = image.thumbnail_src;
-            const text = image.edge_media_to_caption.edges[0].node.text;
-            const url = `https://www.instagram.com/p/${image.shortcode}`;
+            const thumbnail = image.thumbnailSrc;
+            const text = image.caption;
+            const url = image.link;
             const template = $('.js-drawing-template').clone();
 
             template.removeClass('js-drawing-template');
