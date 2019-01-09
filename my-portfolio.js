@@ -9,7 +9,6 @@
       if (images.length > 6) {
         $('.js-show-more-btn').show();
       }
-      return false;
     } else {
       localStorage.clear();
     }
